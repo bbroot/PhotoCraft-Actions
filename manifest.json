@@ -1,0 +1,11 @@
+{
+  "name": "PhotoCraft",
+  "version": "0.1.0",
+  "description": "Photo processing plugin & action library",
+  "plugins": ["grayscale", "resize", "watermark"],
+  "actions": [
+    "actions/resize.json",
+    "actions/grayscale.json",
+    "actions/watermark.json"
+  ]
+}

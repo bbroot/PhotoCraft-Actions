@@ -1,0 +1,7 @@
+{
+  "name": "add-watermark",
+  "description": "Add a PhotoCraft watermark",
+  "steps": [
+    { "plugin": "watermark", "params": { "text": "PhotoCraft", "position": [10, 10] } }
+  ]
+}
