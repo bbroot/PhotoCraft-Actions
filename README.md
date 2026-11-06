@@ -15,6 +15,13 @@ This repo collects **action sets** that run directly in PhotoCraft (load in the 
 
 ---
 
+## 作者 / Author
+
+- **bbroot** —— 动作移植与整理 / porting & curation
+- 平台 / Platforms：B站、无忌视觉、小红书
+
+---
+
 ## 已收录 / Included
 
 ### 人像精修（Portrait Retouching）

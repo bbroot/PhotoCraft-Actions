@@ -1,6 +1,10 @@
 {
   "name": "PhotoCraft-Actions",
   "description": "A curated collection of plugins and action sets for PhotoCraft.",
+  "author": {
+    "name": "bbroot",
+    "platforms": ["B站", "无忌视觉", "小红书"]
+  },
   "actionSets": [
     {
       "name": "人像精修",
