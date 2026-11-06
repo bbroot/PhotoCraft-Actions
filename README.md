@@ -38,7 +38,7 @@ Built on Python and [Pillow](https://python-pillow.org/), it is cross-platform a
 ```bash
 pip install photocraft
 # 或本地开发 / or for local development:
-git clone https://github.com/<your-username>/PhotoCraft.git
+git clone https://github.com/bbroot/PhotoCraft.git
 cd PhotoCraft
 pip install -e .
 ```
