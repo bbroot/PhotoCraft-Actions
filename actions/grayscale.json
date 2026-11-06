@@ -1,7 +1,0 @@
-{
-  "name": "to-grayscale",
-  "description": "Convert image to grayscale",
-  "steps": [
-    { "plugin": "grayscale", "params": {} }
-  ]
-}

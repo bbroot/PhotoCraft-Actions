@@ -1,7 +1,0 @@
-{
-  "name": "resize-to-512",
-  "description": "Resize image to 512x512",
-  "steps": [
-    { "plugin": "resize", "params": { "width": 512, "height": 512 } }
-  ]
-}

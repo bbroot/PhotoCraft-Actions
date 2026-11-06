@@ -1,0 +1,227 @@
+{
+  "action": {
+    "name": "完美磨皮@无忌视觉",
+    "steps": [
+      [
+        "layer.new.layerViaCopy",
+        {}
+      ],
+      [
+        "layer.select",
+        {
+          "layer": {
+            "ordinal": "Frwr"
+          },
+          "mode": "add"
+        }
+      ],
+      [
+        "layer.stampVisible",
+        {}
+      ],
+      [
+        "layer.setProps",
+        {
+          "name": "去除要保留的纹理"
+        }
+      ],
+      [
+        "layer.new.layerViaCopy",
+        {}
+      ],
+      [
+        "layer.setProps",
+        {
+          "name": "去除中等瑕疵"
+        }
+      ],
+      [
+        "layer.new.layerViaCopy",
+        {}
+      ],
+      [
+        "layer.setProps",
+        {
+          "name": "保留纹理"
+        }
+      ],
+      [
+        "layer.select",
+        {
+          "layer": "保留纹理"
+        }
+      ],
+      [
+        "layer.hideLayers",
+        {}
+      ],
+      [
+        "layer.hideLayers",
+        {
+          "layer": "去除中等瑕疵"
+        }
+      ],
+      [
+        "layer.select",
+        {
+          "layer": "去除要保留的纹理"
+        }
+      ],
+      [
+        "actions.stopMessage",
+        {
+          "allowContinue": true,
+          "message": "将你需要保留的细节部分模糊掉@无忌视觉"
+        }
+      ],
+      [
+        "filter.blur.gaussianBlur",
+        {
+          "radius": 2.3
+        }
+      ],
+      [
+        "layer.showLayers",
+        {
+          "layer": "保留纹理"
+        }
+      ],
+      [
+        "layer.select",
+        {
+          "layer": "保留纹理"
+        }
+      ],
+      [
+        "image.applyImage",
+        {
+          "blending": "subtract",
+          "offset": 128,
+          "scale": 2,
+          "source": {
+            "channel": "composite",
+            "layer": "去除要保留的纹理"
+          }
+        }
+      ],
+      [
+        "layer.setProps",
+        {
+          "blend": "Linear Light"
+        }
+      ],
+      [
+        "layer.hideLayers",
+        {}
+      ],
+      [
+        "layer.hideLayers",
+        {
+          "layer": "去除要保留的纹理"
+        }
+      ],
+      [
+        "layer.select",
+        {
+          "layer": "去除中等瑕疵"
+        }
+      ],
+      [
+        "layer.showLayers",
+        {}
+      ],
+      [
+        "layer.smartObjects.convertToSmartObject",
+        {}
+      ],
+      [
+        "actions.stopMessage",
+        {
+          "allowContinue": true,
+          "message": "将中等瑕疵全部模糊掉，瑕疵比较大的最后使用修复画笔修复@无忌视觉"
+        }
+      ],
+      [
+        "filter.blur.gaussianBlur",
+        {
+          "radius": 4.4
+        }
+      ],
+      [
+        "layer.showLayers",
+        {
+          "layer": "保留纹理"
+        }
+      ],
+      [
+        "layer.select",
+        {
+          "layer": "保留纹理"
+        }
+      ],
+      [
+        "layer.select",
+        {
+          "layer": "去除中等瑕疵",
+          "mode": "add"
+        }
+      ],
+      [
+        "layer.select",
+        {
+          "layer": "去除要保留的纹理",
+          "mode": "add"
+        }
+      ],
+      [
+        "layer.groupLayers",
+        {
+          "name": "组 1"
+        }
+      ],
+      [
+        "layer.setProps",
+        {
+          "name": "去瑕疵"
+        }
+      ],
+      [
+        "layer.new.layer",
+        {}
+      ],
+      [
+        "layer.setProps",
+        {
+          "name": "使用修复画笔去除大的瑕疵"
+        }
+      ],
+      [
+        "actions.stopMessage",
+        {
+          "allowContinue": true,
+          "message": "选中黑色蒙版，使用低流量15%左右白色画笔在需要修复的皮肤上进行涂抹，你马上就要看到效果了"
+        }
+      ],
+      [
+        "layer.select",
+        {
+          "layer": "去瑕疵"
+        }
+      ],
+      [
+        "layer.layerMask.hideAll",
+        {}
+      ],
+      [
+        "tools.defaultColors",
+        {}
+      ]
+    ]
+  },
+  "name": "完美磨皮@无忌视觉",
+  "options": {
+    "format": "psd",
+    "output": "E:/qclaw/projects/人像精修移植/out"
+  },
+  "photocraftDroplet": 1
+}

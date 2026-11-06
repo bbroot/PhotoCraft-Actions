@@ -1,11 +1,18 @@
 {
-  "name": "PhotoCraft",
-  "version": "0.1.0",
-  "description": "Photo processing plugin & action library",
-  "plugins": ["grayscale", "resize", "watermark"],
-  "actions": [
-    "actions/resize.json",
-    "actions/grayscale.json",
-    "actions/watermark.json"
+  "name": "PhotoCraft-Actions",
+  "description": "A curated collection of plugins and action sets for PhotoCraft.",
+  "actionSets": [
+    {
+      "name": "人像精修",
+      "title": "人像精修 (Portrait Retouching)",
+      "path": "actions/人像精修",
+      "files": {
+        "photocraftJson": "人像精修-actions.json",
+        "photocraftAtn": "人像精修-PhotoCraft.atn",
+        "psOriginalAtn": "人像精修-PS原版.atn",
+        "droplet": "人像精修-批处理.pcdroplet",
+        "readme": "使用说明.md"
+      }
+    }
   ]
 }
